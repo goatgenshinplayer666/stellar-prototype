@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bridge — cash closer to home</title>
+  <style>
+:root{--ink:#173c35;--green:#236e55;--muted:#748079;--line:#e1e7df;--paper:#f8faf6;--lime:#d8ef93}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:14px}button,input,select{font:inherit}button,select{cursor:pointer}a{color:inherit;text-decoration:none}.nav{height:93px;max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:29px;font-weight:800;letter-spacing:-1.5px;display:flex;align-items:center;gap:9px}.logo{background:var(--ink);color:var(--lime);border-radius:10px;width:34px;height:34px;text-align:center;font-size:27px}.brand-dot{color:#6b9550;margin-left:-8px}.challenge,.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:700}.challenge{color:var(--muted)}.demo-pill{background:#edf2e8;border:1px solid #dce5d6;border-radius:30px;padding:9px 14px;font-size:11px;color:var(--green)}main{max-width:1100px;margin:auto}.hero{position:relative;padding:65px 0 44px;overflow:hidden}.eyebrow{color:#6b826b}h1{font-size:65px;line-height:1.06;letter-spacing:-3px;margin:22px 0}h1 span{color:#74925e}.hero p{font-size:16px;line-height:1.7;color:#6a7870}.hero-note{font-size:11px;margin-top:24px;color:#778275}.hero-note span{color:#739355;margin-right:8px}.hero-art{position:absolute;width:350px;height:290px;right:65px;top:45px}.orbit{position:absolute;border:1px solid #d8e2ce;border-radius:50%;width:290px;height:205px;top:34px;left:25px;transform:rotate(-30deg)}.orbit-two{transform:rotate(37deg);height:250px;width:210px;left:68px;top:13px}.art-center{position:absolute;left:107px;top:75px;width:116px;height:116px;border-radius:29px;background:var(--lime);font-size:90px;text-align:center;box-shadow:10px 16px 40px #234a3510;transform:rotate(-9deg)}.art-point{position:absolute;border-radius:50%;width:44px;height:44px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-size:22px}.point-one{top:25px;left:40px}.point-two{right:22px;bottom:42px;background:var(--ink);color:var(--lime)}.art-label{position:absolute;bottom:-6px;left:63px;font-size:11px;line-height:1.5;color:#7c8b76}.notice{display:flex;align-items:center;gap:13px;padding:13px 19px;border:1px solid #dce5d6;border-radius:9px;background:#f0f4e9;color:#6c7967;font-size:12px;line-height:1.6}.notice p{margin:0}.notice strong{color:#435b40}.notice-icon{border:1px solid #829774;border-radius:50%;width:17px;height:17px;text-align:center;flex-shrink:0;font-size:12px}.workspace{display:grid;grid-template-columns:1fr 345px;gap:34px;margin-top:45px}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}h2{font-size:24px;letter-spacing:-.7px;margin:10px 0 20px}.currency-pill{font-size:10px;border:1px solid var(--line);border-radius:20px;padding:7px 10px;white-space:nowrap;color:#738074}.filters{display:flex;gap:12px;margin:6px 0 20px}label{display:block;font-size:11px;font-weight:600;color:#53665a;position:relative}.filters label{flex:1}select,input{display:block;width:100%;border:1px solid #dce3da;background:#fff;color:var(--ink);border-radius:6px;padding:12px;margin-top:8px;min-height:43px}input:focus,select:focus,button:focus-visible,a:focus-visible{outline:2px solid #769c50;outline-offset:3px}.results-line{display:flex;justify-content:space-between;font-size:10px;color:#859083;margin-bottom:13px}.results-line span:last-child{color:#82956c}.agent-list{display:grid;gap:12px}.agent-card{border:1px solid var(--line);border-radius:10px;background:white;padding:20px;display:grid;grid-template-columns:43px 1fr;gap:13px}.agent-icon{background:#f1f4ed;border-radius:9px;height:42px;display:grid;place-items:center;font-size:22px;color:#72856a}.agent-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.agent-top h3{font-size:14px;margin:0}.badge{font-size:9px;border-radius:20px;padding:5px 8px;background:#edf5e8;color:#588046;white-space:nowrap}.badge.empty{background:#f5eee6;color:#97734a}.address{font-size:11px;color:#829083;margin:7px 0 16px}.agent-bottom{display:flex;align-items:end;justify-content:space-between;border-top:1px solid #eff1ed;padding-top:13px}.cash-label{font-size:9px;color:#859080;display:block;margin-bottom:4px}.cash-value{font-size:20px;font-weight:600;letter-spacing:-.5px}.select-agent{border:1px solid #dce5d7;border-radius:6px;padding:8px 12px;background:white;color:var(--green);font-size:11px}.select-agent:disabled{color:#a0a69b;cursor:not-allowed;background:#f8f9f6}.reservation-panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:25px;align-self:start}.reservation-icon{background:var(--lime);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:28px;margin-bottom:23px}.reservation-panel h2{margin-bottom:8px}.muted{color:#849080;font-size:12px;line-height:1.6;margin:0 0 26px}.reservation-panel label{margin-top:19px}.label-hint{position:absolute;right:0;color:#929b8d;font-size:10px}.field-help{font-size:10px;color:#8e9789;margin:8px 0 21px}.pickup-info{display:flex;gap:10px;padding:12px;background:#f5f7f1;border-radius:7px;color:#819073}.pickup-info>span{font-size:21px}.pickup-info p{font-size:10px;line-height:1.8;margin:0}.pickup-info strong{font-weight:500;color:#52664b}.primary{width:100%;border:0;background:var(--ink);color:white;padding:14px;border-radius:7px;font-size:12px;margin-top:22px;display:flex;justify-content:space-between}.primary:hover{background:var(--green)}#message{font-size:12px;line-height:1.5;color:#a44432}#message.success{color:var(--green)}.privacy-note{font-size:9px;color:#929b8a;text-align:center;margin:18px 0 0}.reservations-section{margin-top:42px}.text-button{border:0;background:none;color:#6c7c62;font-size:11px;text-decoration:underline}.empty-state{border:1px dashed #d6dfcf;border-radius:9px;text-align:center;color:#87917f;padding:27px;font-size:12px}.reservation-item{background:#fff;border:1px solid var(--line);border-radius:8px;padding:17px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:15px}.reservation-item p{margin:6px 0 0;color:#7d8875;font-size:11px}.reservation-item button{border:1px solid var(--line);background:white;border-radius:5px;padding:8px;color:var(--green);font-size:11px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;border-top:1px solid var(--line);margin-top:45px;padding:30px 0 40px}.steps span{font-size:11px;color:#91a276}.steps h3{font-size:13px;margin:12px 0 7px}.steps p{font-size:11px;color:#8a9382}footer{max-width:1180px;margin:auto;padding:25px 0 35px;border-top:1px solid var(--line);display:flex;align-items:center;gap:25px}footer .brand{font-size:23px}footer p,footer>span{font-size:10px;color:#8b9483}footer>span{margin-left:auto}@media(max-width:900px){main,.nav,footer{margin-left:24px;margin-right:24px}.hero-art{right:0;opacity:.65;transform:scale(.8);transform-origin:right center}.workspace{grid-template-columns:1fr 310px;gap:20px}.currency-pill{display:none}h1{font-size:55px}}@media(max-width:650px){.challenge,.hero-art{display:none}.nav{height:75px}.hero{padding-top:40px}h1{font-size:49px}.workspace{grid-template-columns:1fr}.reservation-panel{margin-top:10px}.agent-card{padding:16px}.steps{gap:16px}footer{flex-wrap:wrap;gap:12px}footer>span{margin-left:0;width:100%}.section-heading h2{font-size:22px}.reservation-item{align-items:start}.filters{gap:9px}}
+
+</style>
+</head>
+<body>
+  <header class="nav"><a class="brand" href="index.html"><span class="logo">↗</span> bridge<span class="brand-dot">.</span></a><span class="challenge">STELLAR INNOVATION CHALLENGE</span><span class="demo-pill">● &nbsp; Demo mode</span></header>
+  <main>
+    <section class="hero"><div class="eyebrow">GLOBAL TRANSFERS. LOCAL POSSIBILITIES.</div><h1>The last mile,<br><span>closer to home.</span></h1><p>Find a nearby cash-out agent, check available cash,<br class="desktop-break"> and reserve your pickup before you go.</p><div class="hero-note"><span>✦</span> A concept built for the Stellar ecosystem</div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-center">↗</div><span class="art-point point-one">$</span><span class="art-point point-two">₱</span><span class="art-label">Across borders.<br>Within reach.</span></div></section>
+    <aside class="notice"><span class="notice-icon">i</span><p><strong>A little demo, a big idea.</strong> Agent locations and cash balances are simulated. No real money, wallets, or private keys are involved.</p></aside>
+    <section class="workspace" aria-labelledby="agents-heading">
+      <div class="agents-panel"><div class="section-heading"><div><div class="eyebrow">YOUR LOCAL NETWORK</div><h2 id="agents-heading">Find a cash-out agent</h2></div><span class="currency-pill">PHP · Philippine peso</span></div>
+        <div class="filters"><label>Location<select id="city"><option value="all">All locations</option><option>Manila</option><option>Quezon City</option><option>Makati</option></select></label><label>Cash availability<select id="availability"><option value="all">All agents</option><option value="available">Cash available</option></select></label></div>
+        <div class="results-line"><span id="result-count"></span><span>● &nbsp;Simulated availability</span></div><div id="agents" class="agent-list"></div>
+      </div>
+      <aside class="reservation-panel" aria-labelledby="reservation-heading"><div class="reservation-icon">↗</div><div class="eyebrow">PLAN YOUR PICKUP</div><h2 id="reservation-heading">Reserve your cash</h2><p class="muted">A little certainty before you make the trip.</p><form id="reservation-form"><label>Cash-out agent<select id="agent" required><option value="">Choose an agent</option></select></label><label>Withdrawal amount <span class="label-hint">PHP</span><input id="amount" type="number" min="100" step="1" placeholder="e.g. 2,000" required></label><p class="field-help">Minimum ₱100 · Whole pesos only</p><div class="pickup-info"><span>◷</span><p><strong>30-minute pickup window</strong><br>Your demo reservation expires automatically.</p></div><button class="primary" type="submit">Request reservation <span>↗</span></button><p id="message" role="status" aria-live="polite"></p></form><p class="privacy-note">No sign-up. No payment. Just a prototype.</p></aside>
+    </section>
+    <section class="reservations-section"><div class="section-heading"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Your reservations</h2></div><button id="reset" class="text-button" type="button">Reset demo</button></div><div id="reservations"></div></section>
+    <section class="steps"><div><span>01</span><h3>Find your agent</h3><p>Explore local cash-out points.</p></div><div><span>02</span><h3>Check the cash</h3><p>See simulated availability upfront.</p></div><div><span>03</span><h3>Reserve & collect</h3><p>Plan a pickup with confidence.</p></div></section>
+  </main><footer><a class="brand" href="index.html">bridge.</a><p>Connecting global value to everyday life.</p><span>Prototype · No blockchain connection</span></footer>
+<script>
+// All state lives in memory. Reloading the page starts a fresh demo.
+const initialAgents = [
+  { id: 'luna', name: 'Luna Neighborhood Store', city: 'Manila', address: '128 Mabini Street, Ermita', cash: 15000 },
+  { id: 'bayan', name: 'Bayan Remittance Center', city: 'Quezon City', address: '42 Maginhawa Street, Diliman', cash: 8500 },
+  { id: 'sari', name: 'Sari-Sari Express', city: 'Makati', address: '76 J.P. Rizal Street, Poblacion', cash: 3200 },
+  { id: 'corner', name: 'The Corner Cash Point', city: 'Manila', address: '19 Pedro Gil Street, Paco', cash: 0 }
+];
+let agents = initialAgents.map(agent => ({ ...agent }));
+let reservations = [];
+let nextReference = 1;
+const get = id => document.getElementById(id);
+const money = amount => new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP', maximumFractionDigits: 0 }).format(amount);
+
+function render() {
+  const selectedAgent = get('agent').value;
+  const visible = agents.filter(agent =>
+    (get('city').value === 'all' || agent.city === get('city').value) &&
+    (get('availability').value === 'all' || agent.cash >= 100));
+  get('result-count').textContent = `${visible.length} agent${visible.length === 1 ? '' : 's'} found`;
+  // Agent names and addresses below are fixed demo data, never user input.
+  get('agents').innerHTML = visible.length ? visible.map(agent => `
+    <article class="agent-card"><div class="agent-icon" aria-hidden="true">⌂</div><div>
+      <div class="agent-top"><h3>${agent.name}</h3><span class="badge ${agent.cash < 100 ? 'empty' : ''}">${agent.cash >= 100 ? 'Cash available' : 'Unavailable'}</span></div>
+      <p class="address">${agent.address} · ${agent.city}</p><div class="agent-bottom"><div><span class="cash-label">AVAILABLE FOR CASH-OUT</span><span class="cash-value">${money(agent.cash)}</span></div>
+      <button type="button" class="select-agent" data-agent="${agent.id}" ${agent.cash < 100 ? 'disabled' : ''}>Select agent ↗</button></div></div></article>`).join('') : '<p class="empty-state">No agents match these filters. Try another location.</p>';
+  get('agent').replaceChildren(new Option('Choose an agent', ''), ...agents.map(agent => {
+    const option = new Option(`${agent.name} · ${money(agent.cash)}`, agent.id);
+    option.disabled = agent.cash < 100;
+    return option;
+  }));
+  get('agent').value = selectedAgent;
+  get('reservations').innerHTML = reservations.length ? reservations.map(reservation => {
+    const agent = agents.find(agent => agent.id === reservation.agentId);
+    return `<article class="reservation-item"><div><strong>${money(reservation.amount)} · ${agent.name}</strong><p>Demo reference ${reservation.id} · ${reservation.status === 'active' ? `Reserved until ${new Date(reservation.expires).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}` : reservation.status}</p></div>${reservation.status === 'active' ? `<button type="button" data-cancel="${reservation.id}">Cancel reservation</button>` : ''}</article>`;
+  }).join('') : '<div class="empty-state">Your next step starts here. Choose an agent to reserve a cash pickup.</div>';
+}
+
+function message(text, success = false) {
+  get('message').textContent = text;
+  get('message').className = success ? 'success' : '';
+}
+
+function expireReservations() {
+  let changed = false;
+  reservations.forEach(reservation => {
+    if (reservation.status === 'active' && reservation.expires <= Date.now()) {
+      reservation.status = 'expired';
+      agents.find(agent => agent.id === reservation.agentId).cash += reservation.amount;
+      changed = true;
+    }
+  });
+  if (changed) { render(); message('A demo reservation expired. Its cash is available again.'); }
+}
+
+get('city').addEventListener('change', render);
+get('availability').addEventListener('change', render);
+get('agents').addEventListener('click', event => {
+  const button = event.target.closest('[data-agent]');
+  if (!button) return;
+  get('agent').value = button.dataset.agent;
+  message('');
+  get('amount').focus();
+});
+get('reservation-form').addEventListener('submit', event => {
+  event.preventDefault();
+  expireReservations();
+  const agent = agents.find(agent => agent.id === get('agent').value);
+  const amount = Number(get('amount').value);
+  if (!agent) return message('Choose a cash-out agent.');
+  if (!Number.isSafeInteger(amount) || amount < 100) return message('Enter a whole-peso amount of at least ₱100.');
+  if (amount > agent.cash) return message(`This agent has ${money(agent.cash)} available. Try a smaller amount or another agent.`);
+  agent.cash -= amount;
+  const id = `BR-${String(nextReference++).padStart(4, "0")}`;
+  reservations.unshift({ id, agentId: agent.id, amount, expires: Date.now() + 30 * 60 * 1000, status: 'active' });
+  render();
+  get('amount').value = '';
+  message(`Demo reservation ${id} confirmed. No money has moved.`, true);
+});
+get('reservations').addEventListener('click', event => {
+  const button = event.target.closest('[data-cancel]');
+  if (!button) return;
+  expireReservations();
+  const reservation = reservations.find(item => item.id === button.dataset.cancel);
+  if (!reservation || reservation.status !== 'active') return;
+  agents.find(agent => agent.id === reservation.agentId).cash += reservation.amount;
+  reservation.status = 'cancelled';
+  render();
+  message('Reservation cancelled. Demo cash availability restored.', true);
+});
+get('reset').addEventListener('click', () => {
+  agents = initialAgents.map(agent => ({ ...agent }));
+  reservations = [];
+  get('reservation-form').reset();
+  render();
+  message('Demo reset. All starting balances restored.', true);
+});
+render();
+setInterval(expireReservations, 1000);
+
+</script>
+</body>
+</html>
